@@ -1,0 +1,41 @@
+.intro {
+  display: flex;
+  margin-top: 200px;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.intro h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+}
+.intro h1 span {
+  background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro p {
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 50px;
+}
+.btns {
+  padding: 20px 40px;
+  font-size: 25px;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btns:hover {
+  background-color: white;
+  color: black;
+  transform: scale(0.9);
+}

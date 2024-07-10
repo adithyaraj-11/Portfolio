@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 15px 0px;
+  background: rgb(16, 16, 16);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  margin-left: 50px;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  transform: scale3D(1.1, 1.2, 1.1);
+}
+.navmenu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  font-size: 22px;
+}
+.navmenu li {
+  transition: 0.5ms ease;
+}
+.navmenu li:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.navmenu li p,
+.connect p {
+  text-decoration: none;
+  color: white;
+}
+.connect {
+  margin-right: 20px;
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-size: 21px;
+
+  background: linear-gradient(270deg, rgb(0, 191, 255), rgb(51, 218, 51));
+  cursor: pointer;
+  transition: 0.4s;
+}
+.connect:hover {
+  transform: scale(0.9);
+}
