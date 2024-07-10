@@ -1,93 +1,98 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    margin: 80px 170px;
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 80px 170px;
 }
-.title{
-    position: relative;
+.title {
+  position: relative;
 }
-.title h1{
-    padding: 0px 30px;
-    font-size: 60px;
-    font-weight: 600;
+.title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
 }
-.wrap{
-    display: flex;
-    gap: 100px;
+.wrap {
+  display: flex;
+  gap: 100px;
 }
-.leftbox{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.leftbox h1{
-    font-size: 40px;
-    font-weight: 500;
-    background:linear-gradient(270deg,rgb(51, 218, 51),rgb(0, 191, 255));
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.leftbox h1 {
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.details{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    color: white;
-    font-size: 25px;
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  font-size: 25px;
 }
-.det{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.det {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.rightbox{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
+#lkdn:hover {
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid white;
 }
-.rightbox label{
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
+.rightbox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
 }
-.rightbox input{
-    border: none;
-    width: 700px;
-    height: 80px;
-    padding-left: 20px;
-    border-radius: 5px;
-    background: rgb(30, 30, 30);
-    color: white;
-    font-family: 'outfit';
-    font-size: 20px;
+.rightbox label {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
 }
-.rightbox textarea{
-    width: 650px;
-    border: none;
-    padding: 25px;
-    border-radius: 5px;
-    background: rgb(30, 30, 30);
-    color: white;
-    font-family: 'outfit';
-    font-size: 20px;
+.rightbox input {
+  border: none;
+  width: 700px;
+  height: 80px;
+  padding-left: 20px;
+  border-radius: 5px;
+  background: rgb(30, 30, 30);
+  color: white;
+  font-family: "outfit";
+  font-size: 20px;
 }
-.btn-submit{
-    padding: 20px 40px;
-    font-size: 18px;
-    background: transparent;
-    color: white;
-    border-radius: 50px;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-bottom: 50px;
+.rightbox textarea {
+  width: 650px;
+  border: none;
+  padding: 25px;
+  border-radius: 5px;
+  background: rgb(30, 30, 30);
+  color: white;
+  font-family: "outfit";
+  font-size: 20px;
 }
-.btn-submit:hover{
-    background: white;
-    color: black;
-    transform: scale(0.9);
+.btn-submit {
+  padding: 20px 40px;
+  font-size: 18px;
+  background: transparent;
+  color: white;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 50px;
+}
+.btn-submit:hover {
+  background: white;
+  color: black;
+  transform: scale(0.9);
 }

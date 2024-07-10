@@ -6,6 +6,9 @@ import phone from "../../assets/phone.png";
 import location from "../../assets/location.png";
 
 const Contact = () => {
+  const linkdirect = () => {
+    window.open("https://www.linkedin.com/in/adithyaraj-k/");
+  };
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -38,7 +41,7 @@ const Contact = () => {
         <div className="leftbox">
           <h1>Reach me at</h1>
           <div className="details">
-            <div className="det">
+            <div onClick={linkdirect} className="det" id="lkdn">
               <img src={linkedin} alt="Linkedin" width={30} />
               <p>Adithyaraj K</p>
             </div>
