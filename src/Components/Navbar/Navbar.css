@@ -27,6 +27,7 @@
   font-size: 22px;
 }
 .navmenu li {
+  text-decoration: none;
   transition: 0.5ms ease;
 }
 .navmenu li:hover {
