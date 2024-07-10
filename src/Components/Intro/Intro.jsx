@@ -13,11 +13,11 @@ const Intro = () => {
         Hi, I'm <span>Adithyaraj</span>
       </h1>
       <p>
-        Currently pursuing a degree in B.Tech - Computer Science. Has great
-        interest in Web & Software Development and Machine Learning.{" "}
+        I'm currently pursuing a degree in B.Tech - Computer Science. I have
+        great interest in Web & Software Development, and Machine Learning.
       </p>
       <button className="btns" onClick={download}>
-        My Resume
+        Download Resume
       </button>
     </div>
   );

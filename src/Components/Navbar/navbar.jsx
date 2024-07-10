@@ -32,9 +32,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="connect">
-        <a href="#contact">
+        <Anchorlink className="anchor" offset={100} href="#contact">
           <p>Connect with Me</p>
-        </a>
+        </Anchorlink>
       </div>
     </div>
   );
