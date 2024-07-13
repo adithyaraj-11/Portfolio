@@ -27,11 +27,9 @@
   font-size: 22px;
 }
 .navmenu li {
-  text-decoration: none;
   transition: 0.5ms ease;
 }
 .navmenu li:hover {
-  text-decoration: none;
   transform: scale(1.1);
   background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
   background-clip: text;
@@ -56,4 +54,7 @@
 }
 .connect:hover {
   transform: scale(0.9);
+}
+.anchor {
+  text-decoration: none;
 }
