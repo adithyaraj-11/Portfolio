@@ -1,6 +1,6 @@
 import React from "react";
 import "./Intro.css";
-import Resume from "../../assets/125003013_Adithyaraj.pdf";
+import Resume from "../../assets/Resume.pdf";
 
 const Intro = () => {
   const download = () => {
