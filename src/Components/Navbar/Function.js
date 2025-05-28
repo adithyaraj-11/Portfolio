@@ -10,3 +10,8 @@ export function change() {
         logo.style.color = 'white';
     });
 }
+
+export function toggleDropdown() {
+  const navmenu = document.querySelector('.navmenu');
+  navmenu.classList.toggle('show');
+}

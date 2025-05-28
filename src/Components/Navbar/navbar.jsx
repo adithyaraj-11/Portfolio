@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { change } from "./Function.js";
 import Anchorlink from "react-anchor-link-smooth-scroll";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="navbar">
       <h3 className="logo" onMouseOver={change}>
         &lt;/Adithyaraj&gt;
       </h3>
-      <ul className="navmenu">
+
+      <div className="hamburger" onClick={toggleDropdown}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      {/* Add "show" class conditionally */}
+      <ul className={`navmenu ${menuOpen ? "show" : ""}`}>
         <li>
           <Anchorlink className="anchor" offset={100} href="#intro">
             <p>Home</p>
@@ -31,6 +45,7 @@ const Navbar = () => {
           </Anchorlink>
         </li>
       </ul>
+
       <div className="connect">
         <Anchorlink className="anchor" offset={100} href="#contact">
           <p>Connect with Me</p>
