@@ -4,13 +4,16 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  padding: 0 20px;
 }
+
 .intro h1 {
   text-align: center;
   width: 70%;
   font-size: 90px;
   font-weight: 600;
 }
+
 .intro h1 span {
   background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
   background-clip: text;
@@ -24,6 +27,7 @@
   font-size: 25px;
   line-height: 50px;
 }
+
 .btns {
   padding: 20px 40px;
   font-size: 25px;
@@ -34,8 +38,65 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .btns:hover {
   background-color: white;
   color: black;
   transform: scale(0.9);
+}
+
+/* ===== Responsive Styling ===== */
+
+@media (max-width: 1024px) {
+  .intro h1 {
+    font-size: 70px;
+    width: 80%;
+  }
+
+  .intro p {
+    width: 70%;
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 50px;
+    width: 90%;
+  }
+
+  .intro p {
+    width: 90%;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .btns {
+    padding: 15px 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    margin-top: 150px;
+    gap: 30px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .intro p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .btns {
+    padding: 12px 25px;
+    font-size: 18px;
+  }
 }

@@ -119,6 +119,9 @@ const Skills = () => {
           <br />
           Pandas
         </div>
+        <div className="lang more">
+          More to come...
+        </div>
       </div>
     </div>
   );
