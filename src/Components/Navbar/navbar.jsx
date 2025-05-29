@@ -12,17 +12,18 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h3 className="logo" onMouseOver={change}>
-        &lt;/Adithyaraj&gt;
-      </h3>
-
-      <div className="hamburger" onClick={toggleDropdown}>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div className="nav-top">
+        <h3 className="logo" onMouseOver={change}>
+          &lt;/Adithyaraj&gt;
+        </h3>
+        <div className="hamburger" onClick={toggleDropdown}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
 
-      {/* Add "show" class conditionally */}
+      {/* Mobile nav menu */}
       <ul className={`navmenu ${menuOpen ? "show" : ""}`}>
         <li>
           <Anchorlink className="anchor" offset={100} href="#intro">

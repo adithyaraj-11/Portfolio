@@ -4,4 +4,21 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .foot p {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foot p {
+    font-size: 12px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
