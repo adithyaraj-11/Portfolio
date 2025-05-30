@@ -58,12 +58,6 @@
     gap: 40px;
     font-size: 20px;
   }
-
-  .connect {
-    padding: 15px 25px;
-    font-size: 18px;
-    margin-right: 15px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -85,13 +79,6 @@
     gap: 20px;
     margin-top: 10px;
     font-size: 18px;
-  }
-
-  .connect {
-    align-self: flex-start;
-    margin-top: 0px;
-    padding: 10px 20px;
-    font-size: 16px;
   }
 }
 
@@ -142,10 +129,6 @@
 
   .navmenu.show {
     display: flex;
-  }
-
-  .connect {
-     display: none;
   }
 
   .anchor p {
