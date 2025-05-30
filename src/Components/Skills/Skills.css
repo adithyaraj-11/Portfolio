@@ -29,10 +29,10 @@
     border-radius: 25px;
     transition: 0.5s ;
 }
-.lang:hover{
-    transform: scale(1.03);
-    filter: drop-shadow(0 0 20px rgb(85, 85, 85));
+.lang.animated {
+  animation: pulseLangs 1s ease-in-out infinite alternate;
 }
+
 .more {
     align-items: center;
     display: flex;
@@ -97,5 +97,15 @@
     width: 50px;
     height: auto;
     margin-bottom: 8px;
+  }
+}
+@keyframes pulseLangs {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px rgb(85, 85, 85));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgb(85, 85, 85));
   }
 }

@@ -15,11 +15,25 @@
 }
 
 .intro h1 span {
-  background: linear-gradient(270deg, rgb(51, 218, 51), rgb(0, 191, 255));
+  background: linear-gradient(to right, #2841a5, #9a1f1f, #fdbb2d, #1abc58);
+  background-size: 300% auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s ease-in-out infinite;
 }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% center;
+      }
+      50% {
+        background-position: 100% center;
+      }
+      100% {
+        background-position: 0% center;
+      }
+    }
 
 .intro p {
   width: 50%;

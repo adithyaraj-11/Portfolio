@@ -1,5 +1,7 @@
 import React from "react";
 import "./Skills.css";
+import { useEffect } from "react";
+import { animateLangs } from "./animateSkills";
 import cpp from "../../assets/cpp.png";
 import aem from "../../assets/aem.png";
 import java from "../../assets/java.png";
@@ -20,6 +22,11 @@ import nodejs from "../../assets/nodejs.svg";
 import numpy from "../../assets/numpy.svg";
 import pandas from "../../assets/pandas.svg";
 const Skills = () => {
+  useEffect(() => {
+    const stopAnimation = animateLangs(); 
+    return () => stopAnimation(); 
+  }, []);
+
   return (
     <div id="skills" className="skills">
       <h1>Skills - Things I know , I know.</h1>

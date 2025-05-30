@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import { change } from "./Function.js";
-import Anchorlink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
   const toggleDropdown = () => {
     setMenuOpen(!menuOpen);
   };
@@ -23,35 +22,60 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile nav menu */}
       <ul className={`navmenu ${menuOpen ? "show" : ""}`}>
         <li>
-          <Anchorlink className="anchor" offset={100} href="#intro">
+          <Link
+            activeClass="active"
+            to="intro"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="anchor"
+          >
             <p>Home</p>
-          </Anchorlink>
+          </Link>
         </li>
         <li>
-          <Anchorlink className="anchor" offset={100} href="#skills">
+          <Link
+            activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="anchor"
+          >
             <p>Skills</p>
-          </Anchorlink>
+          </Link>
         </li>
         <li>
-          <Anchorlink className="anchor" offset={100} href="#projects">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="anchor"
+          >
             <p>Projects</p>
-          </Anchorlink>
+          </Link>
         </li>
         <li>
-          <Anchorlink className="anchor" offset={100} href="#contact">
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="anchor"
+          >
             <p>Contact</p>
-          </Anchorlink>
+          </Link>
         </li>
       </ul>
-
-      <div className="connect">
-        <Anchorlink className="anchor" offset={100} href="#contact">
-          <p>Connect with Me</p>
-        </Anchorlink>
-      </div>
     </div>
   );
 };
